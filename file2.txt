@@ -1,0 +1,4 @@
+dog cat 
+leaf
+56
+magic

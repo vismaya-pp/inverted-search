@@ -1,0 +1,92 @@
+TITLE        :INVERTED SEARCH
+NAME         :VISMAYA P P
+Date.        :23/05/2026
+ROLL NUMBER  :25044_041
+
+DESCRIPTION:  he Inverted Search project is a C-based application that creates an index 
+of words from multiple text files using hash tables and linked lists. It stores each 
+unique word along with the file names in which it appears and the number of occurrences.
+The project supports creating, displaying, searching, saving, and updating the database, 
+enabling fast and efficient word searches across multiple files. It demonstrates concepts 
+such as data structures, file handling, dynamic memory allocation, and hashing.
+
+Features
+* Validates input text files.
+* Rejects invalid, empty, or duplicate files.
+* Creates an inverted index using a hash table with 27 indices.
+* Stores:
+    * Word
+    * Number of files containing the word
+    * File names
+    * Word occurrence count in each file
+* Supports efficient word searching.
+* Displays complete database contents.
+* Saves the database into a backup file.
+* Restores the database from a backup file.
+* Handles multiple files dynamically using linked lists.
+
+
+Sample input:
+./a.out file1.txt file2.txt  
+
+Output:
+file1.txt Stored Successfully
+file2.txt Stored Successfully
+Files Stored are:
+file1.txt
+file2.txt
+Number of Files Stored Successfully : 2
+
+1.Create Database
+2.Display Database
+3.Search Database
+4.Save Database
+5.Update Database
+6.Exit
+
+Enter your choice : 1
+
+Database Created Successfully
+
+Enter your choice : 2
+
+Index      Word            Filecount    Filename             Wordcount 
+--------------------------------------------------------------------------
+0          apple           1           file1.txt            1         
+2          cat             1           file2.txt            1         
+3          dog             1           file2.txt            1         
+7          hi              1           file1.txt            1         
+7          hello           1           file1.txt            1         
+11         leaf            1           file2.txt            1         
+12         mango           1           file1.txt            1         
+12         magic           1           file2.txt            1         
+26         56              1           file2.txt            1         
+
+
+Enter your choice : 3
+
+Enter word : cat
+
+Word found successfully
+--------------------------------------
+Word : cat
+File count : 1
+File Name : file2.txt
+Word Count : 1
+
+
+Enter your choice : 4
+
+Enter backup filename : backup.txt
+Database Saved Successfully
+Database saved successfully
+
+
+Enter your choice : 5
+
+Update not possible after create
+
+
+Enter your choice : 6
+
+Exiting...
